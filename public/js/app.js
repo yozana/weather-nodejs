@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     $("form").submit(function(e) {
-        
+        $('#weather-data').html('<p>Loading...</p>');
         e.preventDefault(); // avoid to execute the actual submit of the form.
         
         $.ajax({
