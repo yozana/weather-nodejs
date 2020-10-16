@@ -13,7 +13,7 @@ $(document).ready(function () {
         
         $.ajax({
                type: "GET",
-               url: 'http://localhost:3000/weather?address=' + address, 
+               url: '/weather?address=' + address, 
                //data: form.serialize(), // serializes the form's elements.
                success: (res) => {
                 console.log("Setting html data", res.data)
